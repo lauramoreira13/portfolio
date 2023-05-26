@@ -39,7 +39,6 @@ ul{
 .contenedor-mitades{
     text-align: left;
     align-items: center;
-    margin-top: 50px;
     margin-bottom: 100px;
 }
 .contenedor-izquierda{
@@ -159,7 +158,8 @@ h1{
 }
 
 main{
-    background-color: #e3f1e8;
+    background-color: #2A0944;
+    /*background-color: #c9e6d3;/**/
     width: 100%;
 }
 
@@ -172,41 +172,62 @@ main{
 }
 
 .carta{
-    background-color: #2A0944;
+    background-color: #ffffff;
     width: 300px;
     height: 280px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;   
-    align-content: center;*/
+    align-content: center;
+    text-align: center;
 }
 .posicion-articulos{
     display: inline-flex;
     justify-content: space-around;
-    padding: 10px;
-
+    margin-left: 150px;
+    margin-right: 150px;
 }
 .caja-parrafo{
+    margin-top: 5px;
     margin-left: 30%;
     margin-right: 30%;
     text-align: center;
-}
-
-.fa-html5{
-    /*text-align: center;
-    align-self: center;*/
-}
-.fa-brands{
-    color: orangered;
     
 }
 
-/*.posicion-icono{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
+
+
+.fa-html5, .fa-css3-alt, .fa-sass, .fa-js, .fa-react, .fa-git-alt{
+    margin: 2px;
+    margin-top: 70px;
+    font-size: 100px;
+    align-self: center;
+    
 }
+.fa-html5{
+    color: #e54d26;
+}
+.fa-css3-alt{
+    color: #418ec1;
+}
+.fa-js{
+    color: #f0db4f;
+}
+.fa-sass{
+    color: #cb699a;
+}
+.fa-react{
+    color: #61dafb;
+}
+.fa-git-alt{
+    color: #f34f29;
+}
+
+h3{
+    font-family: 'Goldman', cursive;
+}
+
+
