@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    max-width: 100%;
     background-color: #eefeff;
     overflow-x: hidden;
 }
@@ -40,7 +39,7 @@ ul{
 .contenedor-mitades{
     text-align: left;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 .contenedor-izquierda{
     display: flex;
@@ -62,13 +61,11 @@ img{
 
 h2 h1{
     font-family: 'Goldman', cursive;
-    margin-bottom: 0%;
 }
 
 h1{
     font-size: 5vw;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    
     font-family: 'Shrikhand', cursive;
     color: #2A0944;
 }
@@ -101,7 +98,7 @@ h1{
 }
 
 @media (max-width: 300px){
-    .contenedor-boton .{
+    .contenedor-boton {
         align-self: center;
     }
     .boton-size{
@@ -168,19 +165,20 @@ h1{
     }
 }
 
-main{
-    background-color: #c0ebde;
-    max-width: 100%; 
-}
 .contenedor-seccion{
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    margin: 0;
+    
 }
-
+.conocimientos{
+    background-color: #94D2BD;
+    /*margin-bottom: 100px;*/
+}
 .centrado{
     text-align: center;
 }
@@ -208,12 +206,12 @@ main{
     margin-right: 30px;
 }
 .caja-parrafo{
-    margin-top: 5px;
-    margin-left: 30%;
-    margin-right: 30%;
+    padding-top: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     /*font-size: 25px;*/
-    font-size: 2em;
+    font-size: 1.5em;
     
     /*font-family: 'Zen Antique Soft', serif;*/
     
@@ -252,11 +250,12 @@ main{
 
 h3{
     font-family: 'Goldman', cursive;
+    margin-top:  0;
 }
 
 .caja-subtitulo{
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     color: #3c1696;
 }
 .subtitulo{
@@ -264,6 +263,7 @@ h3{
     /*font-family: 'Goldman', cursive;
     font-family: 'DM Serif Display', serif;*/
     color: #210047;
+    padding-bottom: 30px;
 }
 
 /*tamaño minimo*/
@@ -323,9 +323,14 @@ h3{
     }
 
     .contenedor-cita{
+        display: flex;
+        flex-direction: column;
         background-color: #000000;
         color: #dee3ff;
-        font-size: 3em;
+        padding-bottom: 100px;
+    }
+    .cita{
+        font-size: 3rem;
         padding: 50px;
     }
 
@@ -333,3 +338,19 @@ h3{
         color: #210047;
         font-size: 2em;
     }
+
+    @media (max-width: 600px) and{
+        .cita {
+            font-size: 2rem;
+        }
+    }
+    @media (max-width:350px) {
+        .cita{
+            font-size: 1.5rem;
+        }
+    }
+
+    .contenedor-proyectos{
+        background-color: #210047;
+    }
+
