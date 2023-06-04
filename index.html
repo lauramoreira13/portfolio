@@ -30,13 +30,19 @@
 <link rel="icon" href="WhatsApp_Image_2023-06-02_at_00.38.17-removebg-preview.png" type="logo">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
     <title>proyecto_portfolio</title>
 </head>
 <body>
     <header id="home">
         <nav class="contenedor-nav">
-            <ul>
+            <ul class= "lista-nav">
                 <li>
                     HOLA
                 </li>
@@ -51,15 +57,16 @@
                 </button>
             </ul>
         </nav>
+    </header>
         <div class="contenedor-mitades">
-            <div class="contenedor-izquierda">
-                <h2 class="letra-source">
+            <div class="presentacion">
+                <h2 class=>
                     ¡Hola! Soy
                 </h2>
                 <h1 class="titulo">
                     Laura Moreira
                 </h1>
-                <p class="letra-source color-verde">
+                <p class="parrafo-mitades">
                     Alcohólica, apostólica y romántica
                 </p>
                 <div class="boton-size boton-centrado">
@@ -72,12 +79,12 @@
                 <img src="fotoproyect.png" alt="rostro de una chica generado por una inteligencia artificial">
             </div>
         </div>
-    </header>
-    <main>
+
+    <main id="pruebasombra">
         <section class="contenedor-seccion conocimientos">
             <div class="caja-subtitulo">
                 <h2 class="titulo-seccion">
-                    Mis conocimientos
+                    MIS CONOCIMIENTOS
                 </h2>
                 <p class="parrafo-seccion">
                     Adipisicing elit.
@@ -87,7 +94,7 @@
             </div>
             <div class="contenedor-seccion">
                 <div class="posicion-articulos">
-                    <article class=" carta">
+                    <article class=" carta carta-estilo">
                         <a href="">
                             <i class="fa-brands fa-html5 fa-posicion"></i>
                         </a>
@@ -140,18 +147,18 @@
         </section>
         <section class="contenedor-proyectos">
             <div>
-                <h3 class="titulo-seccion">
+                <h2 class="titulo-seccion">
                     Mis proyectos
-                </h3>
+                </h2>
                 <p class="parrafo-seccion">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex saepe expedita quasi eius ducimus perspiciatis hic assumenda vitae nostrum. Debitis, molestias at. Provident dicta sequi fugiat quis, cumque recusandae laudantium.
                 </p>
             </div>
-            <div class="">
+            <div class="s">
                 <div class="posicion-proyectos">
                     <article class="proyectos">
                         <a href="index.html#home">
-                            <img class="img-proyectos" src="WhatsApp Image 2023-06-01 at 23.47.43.jpeg" alt="Imagen del portfolio">
+                            <img class="img-proyectos" src="descarga.png" alt="Imagen del portfolio">
                             <h3>Portfolio</h3>
                         </a>
                     </article>
@@ -185,12 +192,35 @@
                             <h3>Todo app</h3>
                         </a>
                     </article>
-                    <article class="proyectos">
+                    <article class="proyectos alineacion-izq">
                         <a href="">
                             <img class="img-proyectos" src="undraw_movie_night_re_9umk.svg" alt="Dos personas sentadas comiendo pochoclos y viendo una pelicula">
                             <h3>Buscador de películas</h3>
                         </a>
                     </article>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-formulario">
+            <div class="contenedor-flex">
+                <div class="contenedor-izquierda">
+                    <h3 class="titulo-izquierda">Contactame</h3>
+                    <p class="parrafo-izquierda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aut possimus corrupti sapiente incidunt sed eligendi sequi accusantium totam, sint natus nisi laboriosam reiciendis tenetur nesciunt quam inventore dolore cupiditate.</p>
+                    <ul class="lista-izquierda">
+                        <li>
+                            <a href=""><button class="boton-lista boton-estilo"><i class="fa-regular fa-envelope"></i></button> Gmail</a>
+                        </li>
+                        <li>
+                            <a href=""><button class="boton-lista boton-estilo"><i class="fa-brands fa-instagram"></i></button> Instagram</a>
+                        </li>
+                        <li>
+                            <a href=""><button class="boton-lista boton-estilo"><i class="fa-brands fa-whatsapp"></i></button> WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contenedor-derecha">
+                    <h3 class="titulo-izquierda">Escribime</h3>
+                    <form id="contacto" ></form>
                 </div>
             </div>
         </section>
