@@ -437,7 +437,7 @@ h1{
     }
     
     .contenedor-formulario{
-        background-color: #210047;
+        background-color: #000000;
         display: flex;
         justify-content: center;
     }
@@ -453,7 +453,8 @@ h1{
     }
     .contenedor-izquierda, .contenedor-derecha{
         width: 40%;
-        
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.5em;
     }
     .lista-izquierda{
         list-style: none;
@@ -466,13 +467,7 @@ h1{
         padding-left: 0;
     }
 
-    .contenedor-izquierda{
-        font-family: 'Rajdhani', sans-serif;
-        font-size: 1.5em;
-        
-    }
-
-    .titulo-izquierda{
+    .titulo-form{
         font-size: 3em;
         margin-bottom: 0;
     }
@@ -493,3 +488,55 @@ h1{
         color: #FFFFFF;
     }
     
+
+    
+    .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .columna{
+        display: flex;
+        flex-direction: column;
+    }
+    .horizontal{
+        display: flex;
+        justify-content: space-between;
+    }
+    .vertical{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-estilo{
+        border-radius: 35px;
+        background-color: #d8f0e8;
+        border-color: transparent;
+        padding-left: 1em;
+    }
+    .form-nombres{
+        height: 3em;
+        width: 13em;
+    }
+    .form-email{
+        height: 3em;
+    }
+    .form-mensaje{
+        margin-top: 8px;
+        padding-top: 0;
+        height: 20em;
+        border-radius: 30px;
+        
+    }
+    
+    #boton{
+        margin-top: 10px;
+        border: transparent;
+        border-radius: 15px;
+        width: 5em;
+        height: 2em;
+        background-color: #bfb9f9;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    #boton:hover{
+        background-color: #86c29a;
+        color: #000000;
+    }

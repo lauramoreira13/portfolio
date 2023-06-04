@@ -37,7 +37,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
-    <title>proyecto_portfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header id="home">
@@ -204,11 +204,14 @@
         <section class="contenedor-formulario">
             <div class="contenedor-flex">
                 <div class="contenedor-izquierda">
-                    <h3 class="titulo-izquierda">Contactame</h3>
+                    <h3 class="titulo-form">Contactame</h3>
                     <p class="parrafo-izquierda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aut possimus corrupti sapiente incidunt sed eligendi sequi accusantium totam, sint natus nisi laboriosam reiciendis tenetur nesciunt quam inventore dolore cupiditate.</p>
                     <ul class="lista-izquierda">
                         <li>
                             <a href=""><button class="boton-lista boton-estilo"><i class="fa-regular fa-envelope"></i></button> Gmail</a>
+                        </li>
+                        <li>
+                            <a href=""><button class="boton-lista boton-estilo"><i class="fa-brands fa-github"></i></button> GitHub</a>
                         </li>
                         <li>
                             <a href=""><button class="boton-lista boton-estilo"><i class="fa-brands fa-instagram"></i></button> Instagram</a>
@@ -219,8 +222,32 @@
                     </ul>
                 </div>
                 <div class="contenedor-derecha">
-                    <h3 class="titulo-izquierda">Escribime</h3>
-                    <form id="contacto" ></form>
+                    <h3 class="titulo-form">Escribime</h3>
+                    <form id="form-text">
+                        <div class="horizontal">
+                            <div class="form-group ">
+                                <label for="nombre">Nombre*</label>
+                                <input id="nombre" type="text" placeholder="Ingrese su nombre" class="form-nombres form-estilo">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido*</label>
+                                <input id="apellido" type="text" placeholder="Ingrese su apellido" class="form-nombres form-estilo">
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="vertical">
+                                <label for="email">Email* </label>
+                                <input type="email" placeholder="ej: añamengui@1313.com" class="form-estilo form-email">
+                            </div>
+                            <div class="vertical">
+                                <label for="mensaje">Mensaje*</label>
+                                <input type="mensaje" placeholder="Escriba un mensaje aqui" class="form-estilo form-mensaje">
+                            </div>
+                        </div>
+                        <label>
+                        <input id="boton" type="submit">
+                        </label>
+                    </form>
                 </div>
             </div>
         </section>
