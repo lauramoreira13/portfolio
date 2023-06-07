@@ -43,31 +43,31 @@
     <header name="inicio">
         <nav class="contenedor-nav">
             <ul class= "lista-nav">
-                <li><a href="#inicio">HOLA</a></li>
+                <li class="lista-link"><a href="index.html#inicio">HOLA</a></li>
                 
-                <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
+                <li class="lista-link"><a href="index.html#conocimientos">CONOCIMIENTOS</a></li>
                     
-                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li class="lista-link"><a href="index.html#proyectos">PROYECTOS</a></li>
                     
                 
                 <button class="contenedor-boton">
-                <a href="#contacto">CONTACTO</a> 
+                <a href="index.html#contacto">CONTACTO</a> 
                 </button>
             </ul>
         </nav>
-    </header>
-        <div class="contenedor-presentacion">
+    </header >
+        <div id="inicio" class="contenedor-presentacion">
             <div class="presentacion">
-                <h2>
+                <h2 >
                     ¡Hola! Soy
                 </h2>
-                <h1 class="titulo">
+                <h1>
                     Laura Moreira
                 </h1>
                 <p>
                     Desarrolladora y tatuadora
                 </p>
-                <div class="boton-start boton-centrado">
+                <div class="boton-start">
                     <button class="contenedor-boton">
                     <a href="#proyectos">LO QUE HAGO</a> 
                     </button>
@@ -81,7 +81,7 @@
     <main>
         <section name="conocimientos"  class="contenedor-conocimientos">
             <div class="caja-subtitulo">
-                <h2 class="titulo-seccion">
+                <h2 id="conocimientos" class="titulo-seccion">
                     MIS CONOCIMIENTOS
                 </h2>
                 <p class="parrafo-seccion">
@@ -144,7 +144,7 @@
         </section>
         <section name="proyectos" class="contenedor-proyectos">
             <div>
-                <h2 class="titulo-seccion">
+                <h2 id="proyectos" class="titulo-seccion">
                     Mis proyectos
                 </h2>
                 <p class="parrafo-seccion">
@@ -197,46 +197,46 @@
                 </div>
             </div>
         </section>
-        <section name="contacto" class="contenedor-formulario">
+        <section id="contacto" name="contacto" class="contenedor-formulario">
             <div class="formulario">
-                <div class="contenedor-izquierda">
+                <div class="hijo-formulario">
                     <div>
                         <h3 class="titulo-form">Contactame</h3>
                         <p class="parrafo-izquierda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aut possimus corrupti sapiente incidunt sed eligendi sequi accusantium totam, sint natus nisi laboriosam reiciendis tenetur nesciunt quam inventore dolore cupiditate.</p>
                     </div>
                     <ul class="lista-izquierda">
-                        <li class="lista-iconos">
+                        <li>
                             <a href="moreira.laura.e@gmail.com"><button class="boton-lista boton-estilo"><i class="fa-regular fa-envelope"></i></button> Gmail</a>
                         </li>
-                        <li class="lista-iconos">
+                        <li>
                             <a href="https://github.com/lauramoreira13"><button class="boton-lista boton-estilo"><i class="fa-brands fa-github"></i></button> GitHub</a>
                         </li>
-                        <li class="lista-iconos">
+                        <li>
                             <a href="https://www.instagram.com/algoparadormir/"><button class="boton-lista boton-estilo"><i class="fa-brands fa-instagram"></i></button> Instagram</a>
                         </li>
-                        <li class="lista-iconos">
+                        <li>
                             <a href=""><button class="boton-lista boton-estilo"><i class="fa-brands fa-whatsapp"></i></button> WhatsApp</a>
                         </li>
                     </ul>
                 </div>
-                <div class="contenedor-derecha">
+                <div class="hijo-formulario">
                     <h3 class="titulo-form">Escribime</h3>
                     <form id="form-text">
-                        <div class="horizontal">
+                        <div class="contenedor-nombres">
                                 <label class="vertical"  for="nombre">Nombre*</label>
-                                <input id="nombre" type="text" placeholder="Ingrese su nombre" class="form-nombres form-estilo form-nombre">
+                                <input id="nombre" type="text" placeholder="Ingrese su nombre" class="form-nombres form-estilo">
 
                                 <label class="vertical" for="apellido">Apellido*</label>
-                                <input id="apellido" type="text" placeholder="Ingrese su apellido" class="form-nombres form-estilo form-apellido">
+                                <input id="apellido" type="text" placeholder="Ingrese su apellido" class="form-nombres form-estilo">
                         </div>
-                        <div class="columna">
+                        <div class="vertical">
                             <div class="vertical">
-                                <label for="email">Email* </label>
-                                <input type="email" placeholder="ej: añamengui@1313.com" class="form-estilo form-email">
+                                <label for="email">E-mail* </label>
+                                <input type="email" placeholder="ej: e_mail@1313.com" class="form-estilo form-email">
                             </div>
                             <div class="vertical">
                                 <label for="mensaje">Mensaje*</label>
-                                <input type="mensaje" placeholder="Escriba un mensaje aqui" class="form-estilo form-mensaje">
+                                <input type="mensaje" placeholder="Escriba su mensaje aqui" class="form-estilo form-mensaje">
                             </div>
                         </div>
                         <label>
@@ -247,17 +247,17 @@
             </div>
         </section>
     </main>
-    <footer class="contenedor-footer">
+    <footer class="contenedor-footer ">
         <div>
-            <ul class= "lista-nav">
-                <li><a href="#inicio">HOLA</a></li>
-                <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                <li><a href="#proyectos">PROYECTOS</a></li> 
-                <li><a href="#contacto">CONTACTO</a></li>
+            <ul class= "lista-nav lista-footer">
+                <li class="lista-link"><a href="index.html#inicio">HOLA</a></li>
+                <li class="lista-link"><a href="index.html#conocimientos">CONOCIMIENTOS</a></li>
+                <li class="lista-link"><a href="index.html#proyectos">PROYECTOS</a></li> 
+                <li class="lista-link"><a href="index.html#contacto">CONTACTO</a></li>
             </ul>
         </div>
         <div class="lista-nav">
-            <ul class="lista-nav">
+            <ul class="lista-nav lista-iconos">
                 <li>
                     <a href="moreira.laura.e@gmail.com"><button class="boton-lista boton-estilo"><i class="fa-regular fa-envelope"></i></button></a>
                 </li>

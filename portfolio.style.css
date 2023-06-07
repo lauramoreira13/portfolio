@@ -30,6 +30,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
 }
 .lista-nav{
     display: flex;
@@ -37,7 +38,7 @@ nav{
     align-items: center;
     list-style: none;
     font-family: 'Rajdhani', sans-serif;
-    width: 500px;
+    width: 50vw;
     margin-right: 30px;
     font-size: 1.3em;
 }
@@ -74,7 +75,7 @@ h2 {
 }
 
 h1{
-    font-size: 5vw;
+    font-size: 2em;
     font-family: 'Goldman', cursive;
     color: #62c8bf;
     margin: 0;
@@ -106,41 +107,31 @@ h1{
     align-self: flex-start;
     margin-top: 1em;
 }
-
-.boton-centrado{
-    display: flex;
-    justify-content: center;
-
+.lista-link:hover{
+    color: #BFB9F9;
 }
+
+
 
 @media (max-width: 300px){
-    .contenedor-boton {
-        align-self: center;
+    
+    .contenedor-boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .boton-size{
-        align-self: center;
-    }
-}
-
-@media (max-width: 338px) {
+    
     .contenedor-presentacion{
         display: flex;
         flex-direction: column;
         align-content: center;
         text-align: center;
     }
-    .contenedor-boton {
-            align-self: center;
-    }
-    .boton-size{
-            align-items: center;
-    }
+    
     .contenedor-nav{
             display: none;
         }
-    /*h1{
-        font-size: 40px;
-    }*/
+
 }
 
 @media (min-width: 300px) and (max-width: 1100px){
@@ -157,6 +148,12 @@ h1{
     .contenedor-nav{
         display: none;
     } 
+    .contenedor-boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
 }
 
 
@@ -301,6 +298,11 @@ h1{
     }
     .contenedor-nav{
         display: none;
+    }
+    .posicion-articulos{
+        
+        margin-left: 0;
+        margin-right: 0;
     } 
     }
     
@@ -311,8 +313,18 @@ h1{
         margin-left: 0;
         margin-right: 0;
         }
+        .posicion-articulos{
+            margin-left: 0;
+            margin-right: 0;
+        }
         
-        
+    }
+    @media (max-width: 1300px){
+        .posicion-articulos{
+            
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     .contenedor-cita{
@@ -324,7 +336,7 @@ h1{
         padding-bottom: 100px;
     }
     .cita{
-        font-size: 3em;
+        font-size: 2.5em;
         padding: 50px;
         font-family: 'Source Code Pro', monospace;
         font-style: italic;
@@ -358,8 +370,8 @@ h1{
         background-color: #bfb9f9;
         box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
         padding-bottom: 100px;
-        padding-left: 15em;
-        padding-right: 15em;
+        /*padding-left: 15em;
+        padding-right: 15em;*/
 
     }
 
@@ -368,15 +380,10 @@ h1{
         align-content: center;
         justify-content: center;
         flex-wrap: wrap;
+        padding-left: 15em;
+        padding-right: 15em;
         
     }
-    
-    /*.img-proyectos{
-        width: 13em;
-        height: 13em;
-        box-shadow: none;
-        border-radius: 150px;
-        }*/
 
     .proyectos{
         width: 15em;
@@ -384,9 +391,7 @@ h1{
         background-color: #ffffff;
         margin: 10px;
         padding: 20px;
-        padding-top: 0;
-        border-radius: 70px;
-        border: 1px solid #cbd4d4;
+        border-radius: 30px;
         text-align: center;
         box-shadow: #86c29a 2px 2px 5px;
         font-family: 'Rajdhani', sans-serif;
@@ -394,7 +399,8 @@ h1{
     }
     .proyectos:hover{
         box-shadow: #5bc8e4 2px 2px 5px;
-        background-color: #62c8bf;
+        background-image: radial-gradient(circle, #bfb9f9, #85c3fa, #5bc8e4, #62c8bf, #86c29a);
+
     }
     .iconos, .fa-camera-movie{
         padding-top: 0.5em;
@@ -403,7 +409,12 @@ h1{
         color: #000000;
     }
    
-
+    @media(max-width:800px){
+        .posicion-proyectos{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
     @media(max-width:500px){
         .img-proyectos{
             width: 15em;
@@ -415,6 +426,7 @@ h1{
         .contenedor-nav{
             display: none;
         } 
+        
     }
     @media(max-width:300px){
         .img-proyectos{
@@ -437,20 +449,15 @@ h1{
         margin: 7em;
         background-color: #ffffff;
         width: 80vw;
-        height: 650px;
+        height: 80vh;
         border-radius: 20px;
         display: flex;
         justify-content: space-between;
         padding: 5px;
         
     }
-    .contenedor-derecha{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
     
-    .contenedor-izquierda,.contenedor-derecha{
+    .hijo-formulario{
         padding-top: 0;
         padding-left: 2em;
         padding-right: 2em;
@@ -458,16 +465,8 @@ h1{
         height: 20vh;
         font-family: 'Rajdhani', sans-serif;
         font-size: 1.5em;
-        /*display: flex;
-        flex-wrap: wrap;*/
+        
     }
-    /*.contenedor-derecha{
-        display: flex;
-        flex-direction: column;
-
-    }*/
-    
-
     .lista-izquierda{
         padding-left: 15em;
         list-style: none;
@@ -496,28 +495,17 @@ h1{
         background-color: #bfb9f9;
         color: #FFFFFF;
     }
-
-    .form-group, .columna, .vertical{
-        display: flex;
-        flex-direction: column;
-    }
-    /*.columna{
-        display: flex;
-        flex-direction: column;
-    }*/
-    .horizontal{
-        display: flex;        
-        justify-content: space-between;
-    }
     .vertical{
         display: flex;
         flex-direction: column;
-    }/*
-    .datos-personales{
-        display: flex;
-        flex-direction: column;
-    }*/
+    }
     
+    .contenedor-nombres{
+        display: flex;        
+        justify-content: space-between;
+        flex-direction: column;
+    }
+        
     .form-estilo{
         border-radius: 35px;
         background-color: #d8f0e8;
@@ -527,15 +515,18 @@ h1{
     .form-nombres{
         height: 3em;
         width: 13em;
-        
+        display: flex;
+        flex-direction: column;
     }
+
     .form-email{
         height: 3em;
+        
     }
     .form-mensaje{
         margin-top: 8px;
         padding-top: 0;
-        height: 18em;
+        height: 16em;
         border-radius: 30px;
         
     }
@@ -561,19 +552,20 @@ h1{
         background-color: #000000;
         color: #85c3fa;
     }
+    
 
     h4{
         font-family: 'Source Code Pro', monospace;
 
     }
     
-    @media (max-width:900px){
+    @media (max-width:900px) {
         .contenedor-formulario{
             background-color: #ffffff;
             height: 80em;
             display: flex;
             flex-direction: column;
-            padding: 0;
+            padding: 2em;
         }
         .formulario{
             margin-top: 0;
@@ -581,32 +573,52 @@ h1{
             width: 100vw;
             height: 50em;
             display: flex; 
-            flex-direction: column;      
+            flex-direction: column;     
         }
-        .contenedor-izquierda{
-            width: 100%;
-            padding: 5px;
-            margin: 5px;
+        .hijo-formulario{
+            width: 90vw;
+            padding: 15px;
+            margin-top: 0;
         }
-        .contenedor-derecha{
-            width:100%;
-            margin-top: 2em;
-            margin: 0;
-            padding: 5px;            
-        }
+        
         .lista-izquierda{
             display: flex;
             flex-wrap: wrap;
         }
-        /*
-        .lista-iconos{
-            display: flex;
-            justify-content: space-between;
-            
-        }
-        .parrafo-izquierda{
-            width: 50vw;
-            
-        }*/
+        .form-mensaje, .form-email{
+            width: 80vw;
         
     }
+    .lista-iconos{
+        width: 70vw;
+        margin-left: 5px;
+        display: flex;
+        justify-content: space-around;   
+    }
+        
+    }
+    @media(max-width:700px){
+        .lista-footer{
+            display: none;
+        }
+        .lista-iconos{
+            width: 70vw;
+            margin-left: 5px;
+            display: flex;
+            justify-content: space-around;   
+        }
+        h4{
+            width: 80vw;
+            align-self: flex-start;
+            margin-left: 2.3em;
+        }
+        .titulo-form{
+            font-size: 1.5em;
+        }
+        .lista-nav{
+            align-self: flex-start
+        }
+        
+        
+    }
+    
